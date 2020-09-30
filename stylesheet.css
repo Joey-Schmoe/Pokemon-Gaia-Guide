@@ -7,22 +7,22 @@
 
     --type-color-bug: #A8B820;
     --type-color-dark: #705848;
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
-    --type-color-
+    --type-color-dragon: #7098f8;
+    --type-color-electric: #f8d030;
+    --type-color-fairy: #ee99ac;
+    --type-color-fighting: #c03028;
+    --type-color-fire: #f08030;
+    --type-color-flying: #a890f0;
+    --type-color-ghost: #705898;
+    --type-color-grass: #78c850;
+    --type-color-ground: #e0c068;
+    --type-color-ice: #98d8d8;
+    --type-color-normal: #a8a878;
+    --type-color-poison: #a040a0;
+    --type-color-psychic: #f85888;
+    --type-color-rock: #88a038;
+    --type-color-steel: #b8b8d0;
+    --type-color-water: #6890f0;
 }
 
 @font-face {
@@ -235,6 +235,16 @@ main p {
     height: 72px;
     margin: auto;
 }
+
+.evo-panel {
+    margin: 24px 0;
+}
+
+.evo-panel p {
+    font-size: 24px;
+}
+
+
 
 @media (min-width: 688px) {
     nav {
