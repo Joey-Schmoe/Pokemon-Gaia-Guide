@@ -79,7 +79,7 @@ nav {
     width: 10%;
     height: 100%;
     border: 10px solid var(--color-accent);
-    margin: 32px;
+    margin: 20px;
     margin-top: 140px;
     padding: 16px;
     position: absolute;
@@ -216,6 +216,16 @@ main p {
     width: 128px;
     height: 128px;
     border-radius: 50%;
+}
+
+.starter-info h4 {
+    font-size: 22px;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.starter-info p {
+    font-size: 16px;
 }
 
 .do-not-display {
