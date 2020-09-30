@@ -4,6 +4,25 @@
     --color-highlight: #FF1F1F;
     --color-dark: #282535;
     --color-yellow: #ffde00;
+
+    --type-color-bug: #A8B820;
+    --type-color-dark: #705848;
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
+    --type-color-
 }
 
 @font-face {
@@ -70,12 +89,14 @@ nav {
     border-radius: 10px;
     border-top-right-radius: 0px;
 
-    font-family: pokeGB;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav h2 {
     text-align: center;
     font-size: 36px;
+    border-bottom: 1px solid black;
+    margin: 0;
 }
 
 nav h2 > a {
@@ -83,13 +104,15 @@ nav h2 > a {
 }
 
 nav ul {
-    padding: 8px;
+    margin: 0;
+    padding: 16px;
 }
 
 nav li {
     line-height: 32px;
     list-style-type : square;
-    font-size: 14px;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 nav a {
@@ -195,7 +218,31 @@ main p {
     border-radius: 50%;
 }
 
-@media only screen and (min-width: 900px) {
+.do-not-display {
+    display: none;
+}
+
+.info-panel > span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.info-panel img {
+    width: 72px;
+    height: 72px;
+    margin: auto;
+}
+
+@media (min-width: 688px) {
+    nav {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
     #nav-handle {
         display: none;
     }
@@ -205,8 +252,8 @@ main p {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media (min-width: 1312px) {
     nav {
-        display: none;
+        display: block;
     }
 }
