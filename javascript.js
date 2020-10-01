@@ -1,3 +1,4 @@
+/*
 //Get references to starter panels
 const panels = document.getElementsByClassName('starter-panel');
 
@@ -11,3 +12,4 @@ for (let i = 0; i < panels.length; i++) {
 function DisplayStarterInfo(e) {
 
 }
+*/

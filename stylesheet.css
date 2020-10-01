@@ -40,6 +40,15 @@
     src: url("fonts/Pokemon\ Hollow.ttf");
 }
 
+html {
+    font-size: 16px;
+    min-width: 360px;
+}
+
+h1 {
+    
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -70,7 +79,6 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 48px;
 }
 
 nav {
@@ -122,10 +130,10 @@ nav a {
 }
 
 main {
-    width: 75%;
+    width: 70%;
     min-width: 280px;
     
-    margin: 12px;
+    margin: 12px auto;
     padding: 12px;
     background-color: var(--color-bg);
 
@@ -137,10 +145,9 @@ h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-main h2 {
-    font-size: 64px;
+main h1 {
     font-family: pokeSolid;
-    -webkit-text-fill-color: var(--color-yellow);
+    color: white;
     -webkit-text-stroke: 2px black;
     text-align: center;
 }
@@ -148,6 +155,7 @@ main h2 {
 main h3 {
     font-size: 32px;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 main p {
@@ -161,7 +169,6 @@ main p {
 
 .sub-section img {
     float: right;
-    margin: 12px 36px;
     border: 4px solid black;
     border-radius: 10px;
 }
@@ -170,7 +177,6 @@ main p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
 }
 
 .flex-wrapper {
@@ -186,7 +192,7 @@ main p {
     justify-content: space-around;
 }
 
-.starter-panel {
+.pokemon-panel {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -201,31 +207,32 @@ main p {
 
 
 
-.starter-panel h5 {
+.pokemon-panel h5 {
     text-align: center;
     font-size: 24px;
     margin: auto;
 }
 
-.starter-panel p {
+.pokemon-panel p {
     font-size: 24px;
     margin: auto;
     -webkit-text-stroke: .25px black;
 }
 
-.starter-panel img {
-    width: 128px;
-    height: 128px;
+.pokemon-panel img {
+    width: 70%;
+    height: auto;
     border-radius: 50%;
+    margin: 12px auto;
 }
 
-.starter-info h4 {
+.pokemon-info h4 {
     font-size: 22px;
     margin: auto;
     margin-bottom: 12px;
 }
 
-.starter-info p {
+.pokemon-info p {
     font-size: 16px;
 }
 
@@ -269,9 +276,22 @@ main p {
 
     main {
         float: right;
+        
     }
 }
 
 @media (min-width: 1312px) {
     
+}
+
+@media (min-width: 320px) {
+html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+}
+}
+  
+@media (min-width: 1000px) {
+html {
+    font-size: 22px;
+}
 }
