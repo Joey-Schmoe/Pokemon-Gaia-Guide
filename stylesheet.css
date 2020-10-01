@@ -74,12 +74,14 @@ header h1 {
 }
 
 nav {
+    display: none;
+
     background-color: var(--color-bg);
     min-width: 240px;
     width: 10%;
     height: 100%;
     border: 10px solid var(--color-accent);
-    margin: 20px;
+    margin: 12px;
     margin-top: 140px;
     padding: 16px;
     position: absolute;
@@ -119,27 +121,13 @@ nav a {
     color: black;
 }
 
-#nav-handle {
-    position: absolute;
-    transform: translate(376px, -20px);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: var(--color-bg);
-    border: 4px solid black;
-
-    width: 32px;
-    height: 96px;
-}
-
 main {
-    width: auto;
+    width: 75%;
+    min-width: 280px;
     
-    margin: 32px;
-    margin-top: 18px;
-    margin-left: 464px;
-    padding: 48px;
+    margin: 12px;
+    padding: 12px;
     background-color: var(--color-bg);
-    float: right;
 
     border: 4px solid black;
     border-radius: 10px;
@@ -183,6 +171,19 @@ main p {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
 }
 
 .starter-panel {
@@ -257,23 +258,20 @@ main p {
 
 
 @media (min-width: 688px) {
-    nav {
-        display: none;
-    }
+
 }
 
 @media (min-width: 992px) {
-    #nav-handle {
-        display: none;
+    nav {
+        display: block;
+        border-radius: 10px;
     }
 
-    nav {
-        border-radius: 10px;
+    main {
+        float: right;
     }
 }
 
 @media (min-width: 1312px) {
-    nav {
-        display: block;
-    }
+    
 }
