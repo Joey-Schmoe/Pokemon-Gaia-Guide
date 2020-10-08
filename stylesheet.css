@@ -68,9 +68,6 @@ header {
     justify-content: center;
     border-bottom: 4px solid var(--color-dark);
 
-    background: rgb(83,5,5);
-    background: linear-gradient(0deg, rgba(83,5,5,1) 0%, rgba(132,12,12,1) 8%, rgba(183,20,20,1) 17%, rgba(255,31,31,1) 30%);
-
     color: white;
     text-shadow: 4px 4px black;
 
@@ -139,6 +136,8 @@ main {
 
     border: 4px solid black;
     border-radius: 10px;
+
+    font-family: 'Roboto Mono', monospace;
 }
 
 h2, h3, h4, h5, h6 {
@@ -158,9 +157,14 @@ main h3 {
     text-align: center;
 }
 
+main h4 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
 main p {
     font-family: 'Roboto Mono', monospace;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .sub-section {
