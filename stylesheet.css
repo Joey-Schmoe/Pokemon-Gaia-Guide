@@ -88,10 +88,6 @@ nav span {
     align-content: center;
 }
 
-nav span i {
-    margin: 0 auto;
-}
-
 nav a {
     text-decoration: none;
     text-align: center;
@@ -135,15 +131,21 @@ h2, h3, h4, h5, h6 {
 
 .section-title {
     font-size: 2em;
+    margin-bottom: 16px;
 }
 
 .subsection-title {
-    font-size: 2em;
-    text-align: left;
+    font-size: 1.5em;
+    margin: 32px auto 8px auto;
 }
 
-.subsection-title::after {
-    
+.sub-section > span {
+    margin:16px auto 8px auto;
+    width: 100%;
+}
+
+.chevron {
+    margin-right: 16px;
 }
 
 main p {
@@ -159,12 +161,6 @@ main p {
     float: right;
     border: 4px solid black;
     border-radius: 10px;
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .flex-wrapper {
@@ -201,7 +197,7 @@ main p {
 
 .pokemon-panel p {
     font-size: 24px;
-    margin: auto;
+    margin: 0;
     -webkit-text-stroke: .25px black;
 }
 
@@ -220,6 +216,16 @@ main p {
 
 .pokemon-info p {
     font-size: 16px;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.stat-title {
+    text-align: right;
+    margin: 0;
 }
 
 .do-not-display {
