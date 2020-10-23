@@ -3,8 +3,10 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../stylesheet.css">
+        <link rel="stylesheet" href="../poke-api.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&display=swap" rel="stylesheet">
-        <script src="../javascript.js" defer></script>
+        <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+        <script src="../poke-api.js" defer></script>
     </head>
     <body>
         <header>
@@ -17,6 +19,27 @@
                 <li><a href="forest-pass">Forest Pass</a></li>
             </ul>
         </nav>
+        <div id="info-popup-bg" class="do-not-display">
+            <div id="info-popup">
+                <button type="button" id="info-popup-exit">x</button>
+                <div id="info-main">
+                    <img>
+                    <h2>NAME</h2>
+                    <p>type</p>
+                </div>
+                <hr>
+                <div id="info-stats">
+                    <h3>Base Stats</h3>
+                        <div id="stat-grid">
+
+                        </div>
+                </div>
+                <hr>
+                <div id="info-evolutions">
+                    <h3>Evolutions</h3>
+                </div>
+            </div>
+        </div>
         <main>
             <div id="intro" class="main-section">
                 <h1>Intro</h1>
@@ -139,6 +162,19 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div id="celanto-path">
+                    <h3>Celanto Path</h3>
+                    <hr>
+                    <h4>Wild Pokemon - Grass</h4>
+                    <div class="thumbnail-group">
+                        <div class="poke-thumbnail" data-value="263"></div>
+                        <div class="poke-thumbnail" data-value="276"></div>
+                        <div class="poke-thumbnail" data-value="399"></div>
+                        <div class="poke-thumbnail" data-value="659"></div>
+                        <div class="poke-thumbnail" data-value="187"></div>
+                        <div class="poke-thumbnail" data-value="406"></div>
                     </div>
                 </div>
             </div>
