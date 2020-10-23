@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="../stylesheet.css">
         <link rel="stylesheet" href="../poke-api.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/dcc4dce959.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
         <script src="../poke-api.js" defer></script>
     </head>
@@ -12,12 +13,15 @@
         <header>
             <h1>Pokemon Gaia Guide</h1>
         </header>
-        <nav id="navbar">
-            <h2><a href="intro">Intro</a></h2>
-            <ul>
-                <li><a href="glenwood-town">Glenwood Town</a></li>
-                <li><a href="forest-pass">Forest Pass</a></li>
-            </ul>
+        <nav>
+            <a href="#"><span>
+                <i class="fas fa-long-arrow-alt-left fa-2x"></i>
+                <p>Previous Page Title</p>
+            </span></a>
+            <a href="#"><span>
+                <p>Previous Page</p>
+                <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+            </span></a>
         </nav>
         <div id="info-popup-bg" class="do-not-display">
             <div id="info-popup">
@@ -40,28 +44,28 @@
                 </div>
             </div>
         </div>
-        <main>
-            <div id="intro" class="main-section">
-                <h1>Intro</h1>
+        <main id="intro">
+            <h1 class="page-title">Intro</h1>
                 <div id="glenwood-town">
-                    <h3>Glenwood Town</h3>
+                    <h3 class="section-title">Celanto Town</h3>
                     <hr>
                     <div class="sub-section flex-wrapper">
-                        
-                        <div class="text-section">
-                            <p>Go through the name choice and the starting scene like most games. After finishing that you will be at the end of a path.</p>
-
-                            <p> Walk south a little bit and Luke (You don't know him yet.) will speak to you and teleport you into your house.</p>
-                            
-                            <p>Go outside where your mom and dad will talk to you. Head over to Willow's lab and choose one of the 5 starters!</p>
-                        </div>
                         <img class="map-image" src="http://placehold.jp/400x400.png?text=Map">
+                        <h4 class="subsection-title">Walkthrough</h4>
+                        <div class="text-section">
+                            <p>Talk to Mom downstairs. She says there is a Letter left for you asking you to bring an Old Book to the Reliqunia Ruins.</p>
+
+                            <p>Go upstairs and take book from your desk. Mom will give you the running shoes before you leave the house.</p>
+                            
+                            <p>Head to the right then take the path to the South, pass the Condo (return to this Condo when you have a team of 6 and talk to the fisherman on the 2nd floor for the Good Rod) then to the area with Totems and a large rock.</p>
+                        </div>
+                        
                     </div>
                 </div>
                 <div id="starters">
-                    <h3>Starters</h3>
+                    <h3 class="section-title">Starters</h3>
                     <hr>
-                    <div class="flex-container sub-section">
+                    <div class="flex-wrapper sub-section">
                         <div class="pokemon-panel">
                             <h5>Turtwig</h5>
                             
@@ -165,7 +169,7 @@
                     </div>
                 </div>
                 <div id="celanto-path">
-                    <h3>Celanto Path</h3>
+                    <h3 class="section-title">Celanto Path</h3>
                     <hr>
                     <h4>Wild Pokemon - Grass</h4>
                     <div class="thumbnail-group">
@@ -177,7 +181,6 @@
                         <div class="poke-thumbnail" data-value="406"></div>
                     </div>
                 </div>
-            </div>
         </main>
     </body>
 </html>

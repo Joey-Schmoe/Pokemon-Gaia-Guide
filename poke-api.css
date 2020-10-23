@@ -40,21 +40,6 @@
     src: url("fonts/Pokemon\ Hollow.ttf");
 }
 
-html {
-    font-size: 16px;
-    min-width: 360px;
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
-    background-size: 40px 40px;
-    background-image:
-      linear-gradient(to right, rgba(190, 190, 190, 1) 2px, transparent 1px),
-      linear-gradient(to bottom, rgb(190, 190, 190) 2px, transparent 1px);
-}
-
 .thumbnail-group {
     display: flex;
     flex-wrap: wrap;

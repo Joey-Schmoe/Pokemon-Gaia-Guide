@@ -45,10 +45,6 @@ html {
     min-width: 360px;
 }
 
-h1 {
-    
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -79,56 +75,39 @@ header h1 {
 }
 
 nav {
-    display: none;
-
-    background-color: var(--color-bg);
-    min-width: 240px;
-    width: 10%;
-    height: 100%;
-    border: 10px solid var(--color-accent);
-    margin: 12px;
-    margin-top: 140px;
     padding: 16px;
-    position: absolute;
-    top: 0;
-
-    border: 4px solid black;
-    border-radius: 10px;
-    border-top-right-radius: 0px;
+    display: flex;
+    justify-content: space-between;
 
     font-family: 'Montserrat', sans-serif;
 }
 
-nav h2 {
-    text-align: center;
-    font-size: 36px;
-    border-bottom: 1px solid black;
+nav span {
     margin: 0;
+    display: flex;
+    align-content: center;
 }
 
-nav h2 > a {
-    text-decoration: none;
-}
-
-nav ul {
-    margin: 0;
-    padding: 16px;
-}
-
-nav li {
-    line-height: 32px;
-    list-style-type : square;
-    font-size: 18px;
-    font-family: 'Roboto Mono', monospace;
+nav span i {
+    margin: 0 auto;
 }
 
 nav a {
+    text-decoration: none;
+    text-align: center;
     color: black;
+    width: 40%;
+}
+
+nav p {
+    margin: auto;
+    text-decoration: underline;
 }
 
 main {
-    width: 70%;
+    width: 85%;
     min-width: 280px;
+    float: none;
     
     margin: 12px auto;
     padding: 12px;
@@ -142,24 +121,29 @@ main {
 
 h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-main h1 {
+.page-title {
     font-family: pokeSolid;
     color: white;
     -webkit-text-stroke: 2px black;
     text-align: center;
+
+    font-size: 2.5em;
 }
 
-main h3 {
-    font-size: 32px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+.section-title {
+    font-size: 2em;
 }
 
-main h4 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+.subsection-title {
+    font-size: 2em;
+    text-align: left;
+}
+
+.subsection-title::after {
+    
 }
 
 main p {
@@ -185,7 +169,7 @@ main p {
 
 .flex-wrapper {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -208,8 +192,6 @@ main p {
     margin: 4px;
     padding: 12px;
 }
-
-
 
 .pokemon-panel h5 {
     text-align: center;
@@ -273,15 +255,7 @@ main p {
 }
 
 @media (min-width: 992px) {
-    nav {
-        display: block;
-        border-radius: 10px;
-    }
 
-    main {
-        float: right;
-        
-    }
 }
 
 @media (min-width: 1312px) {
